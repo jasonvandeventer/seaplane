@@ -1,3 +1,6 @@
+# Seaplane calculator with GUI
+# By Jason VanDeventer
+
 import tkinter as tk
 from tkinter import ttk
 import pprint as pp

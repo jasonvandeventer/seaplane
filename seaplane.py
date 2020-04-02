@@ -1,3 +1,6 @@
+# Seaplane calculator for terminal
+# By Jason VanDeventer
+
 import math
 
 # radius of Earth in kilometers
