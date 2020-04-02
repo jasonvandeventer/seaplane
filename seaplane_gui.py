@@ -53,7 +53,7 @@ def calculate():
 # Create window object
 app = tk.Tk()
 app.title('Seaplane Calculator')
-app.geometry('400x225')
+app.geometry('525x225')
 
 #dictionaries
 cities = {'Atlanta': 'atl', 'Dallas': 'dfw', 'Tulsa': 'tul', 
