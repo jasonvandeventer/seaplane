@@ -53,8 +53,8 @@ def calculate():
 # Create window object
 app = tk.Tk()
 app.title('Seaplane Calculator')
-app.geometry('525x225')
-app.iconbitmap('C:/Dev/Python/seaplane/airplane.ico')
+app.geometry('500x250')
+app.iconbitmap('airplane.ico')
 
 #dictionaries
 cities = {'Atlanta': 'atl', 'Dallas': 'dfw', 'Tulsa': 'tul', 
@@ -102,7 +102,7 @@ first_city_text_label = tk.Label(app, text='Name of airport:',
     font=('bold', 14), padx=10, pady=5)
 first_city_text_label.grid(column=0, row=10, sticky=tk.W)
 first_city_text = ttk.Entry(app)
-first_city_text.grid(column=1, row=10, sticky=tk.EW, ipadx=70)
+first_city_text.grid(column=1, row=10, sticky=tk.EW, ipadx=65)
 second_city_text_label = tk.Label(app, text='Name of airport:',
     font=('bold', 14), padx=10, pady=5)
 second_city_text_label.grid(column=0, row=20, sticky=tk.W)
@@ -127,6 +127,10 @@ first_text.grid(column=1, row=25, padx=10, pady=5)
 # create calculate button
 button = tk.Button(app, text="Calculate Distance", command=calculate)
 button.grid(column=0, row=30, padx=10, pady=5, columnspan=2, sticky=tk.EW)
+
+# create quit button
+button = tk.Button(app, text="Exit Program", command=app.quit)
+button.grid(column=0, row=35, padx=10, pady=5, columnspan=2, sticky=tk.EW)
 
 # Start program
 app.mainloop()
