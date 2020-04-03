@@ -54,6 +54,7 @@ def calculate():
 app = tk.Tk()
 app.title('Seaplane Calculator')
 app.geometry('525x225')
+app.iconbitmap('C:/Dev/Python/seaplane/airplane.ico')
 
 #dictionaries
 cities = {'Atlanta': 'atl', 'Dallas': 'dfw', 'Tulsa': 'tul', 
@@ -101,7 +102,7 @@ first_city_text_label = tk.Label(app, text='Name of airport:',
     font=('bold', 14), padx=10, pady=5)
 first_city_text_label.grid(column=0, row=10, sticky=tk.W)
 first_city_text = ttk.Entry(app)
-first_city_text.grid(column=1, row=10, sticky=tk.EW)
+first_city_text.grid(column=1, row=10, sticky=tk.EW, ipadx=70)
 second_city_text_label = tk.Label(app, text='Name of airport:',
     font=('bold', 14), padx=10, pady=5)
 second_city_text_label.grid(column=0, row=20, sticky=tk.W)
