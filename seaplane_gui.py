@@ -5,6 +5,12 @@ import tkinter as tk
 from tkinter import ttk
 import pprint as pp
 import math
+import os
+
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
+
 
 # radius of Earth in kilometers
 R = 6383.0
@@ -56,8 +62,9 @@ def calculate():
 # Create window object
 app = tk.Tk()
 app.title('Seaplane Calculator')
-app.geometry('500x250')
-app.iconbitmap('airplane.ico')
+app.geometry('600x250')
+icon = tk.PhotoImage(file="airplane.png")
+app.iconphoto(False, icon)
 
 # dictionaries
 cities = {'Atlanta': 'atl', 'Dallas': 'dfw', 'Tulsa': 'tul',
