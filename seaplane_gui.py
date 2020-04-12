@@ -62,7 +62,7 @@ def calculate():
 # Create window object
 app = tk.Tk()
 app.title('Seaplane Calculator')
-app.geometry('600x250')
+app.geometry('600x300')
 icon = tk.PhotoImage(file="airplane.png")
 app.iconphoto(False, icon)
 
@@ -80,7 +80,7 @@ airport_names = {"atl": "Hartsfield-Jackson Atlanta International Airport",
                  "ord": "O'Hare International Airport",
                  "sea": "Seattle-Tacoma International Airport",
                  "tul": "Tulsa International Airport",
-                 "cgd": "Paris Charles de Gaulle Airport",
+                 "cdg": "Paris Charles de Gaulle Airport",
                  "pvg": "Shanghai Pudong International Airport",
                  "hkg": "Hong Kong International Airport",
                  "hnd": "Haneda Airport",
